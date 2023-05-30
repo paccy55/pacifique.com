@@ -1,0 +1,138 @@
+h1 {
+    text-align: center;
+  }
+  
+  body {
+    background-color: rgb(5, 120, 173);
+    font-size: 19px; 
+    animation: fade-in 3s forwards;
+   
+    * {
+      font-family: 'Roboto', sans-serif;
+    }
+    
+  }
+  
+  .wrapper {
+    width: min(100%)-2rem, 1400px;
+    margin-inline: auto;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "about-me more-about-me about-this-page"
+    "journey journey journey"
+    "subscribe subscribe subscribe"
+    "footer footer footer"
+    ;
+  
+   min-height: 80vh;
+    margin-top: 4rem;
+    gap: 0.5rem;
+  }
+  
+  .grid-item {
+    padding: 1rem;
+  }
+  
+  .navbar-brand:hover{
+    background-color: rgb(5, 120, 173);
+  }
+  
+  
+  .header {
+    grid-area: header;
+  }
+  
+  .about-me {
+    grid-area: about-me;
+    background-color: rgba(133, 172, 191, 0.517);
+    animation: fade-in 3s forwards;
+  }
+  
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 3;
+    }
+  }
+  
+  .more-about-me {
+    grid-area: more-about-me;
+    background-color: #A0C3D2;
+    animation: fade-in 3s forwards;
+  }
+  
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 3;
+    }
+  }
+  
+  
+  .about-this-page {
+    grid-area: about-this-page;
+    background-color: rgba(133, 172, 191, 0.517);
+    animation: fade-in 3s forwards;
+  }
+  
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 3;
+    }
+  }
+  
+  .journey {
+    grid-area: journey;
+    background-image: url("https://images.unsplash.com/photo-1682684123154-c21854fd90cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80");
+    width: 100%;
+    box-shadow: 2px, 2px silver;
+    animation: fade-in 3s;
+  }
+  
+  
+  .subscribe {
+    grid-area: subscribe;
+    text-align: center;
+    background-color: #A0C3D2;
+  }
+  
+  .footer {
+    grid-area: footer;
+  }
+  
+  img{
+    border-radius: 50%;
+  }
+  
+  p {
+    text-indent: 30px;
+    
+  }
+  button:hover{
+    background-color: #A0C3D2;
+  }
+  
+  footer {
+    background-color: rgba(133, 172, 191, 0.517);
+    
+  }
+  
+  
+  
